@@ -1,0 +1,282 @@
+:root {
+  --Light-Gradient: linear-gradient(180deg, #ebf2fc 0%, #eef8f9 100%);
+  --neutral-900: hsl(227, 75%, 14%);
+  --neutral-800: hsl(226, 25%, 17%);
+  --neutral-700: hsl(225, 23%, 24%);
+  --neutral-600: hsl(226, 11%, 37%);
+  --neutral-300: hsl(0, 0%, 78%);
+  --neutral-200: hsl(217, 61%, 90%);
+  --neutral-100: hsl(0, 0%, 93%);
+  --neutral-0: hsl(200, 60%, 99%);
+  --red-400: hsl(3, 86%, 64%);
+  --red-500: hsl(3, 71%, 56%);
+  --red-700: hsl(3, 77%, 44%);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  transition: background-color 0.3s linear, color 0.3s linear,
+    box-shadow 0.3s linear;
+  -webkit-transition: background-color 0.3s linear, color 0.3s linear,
+    box-shadow 0.3s linear;
+  -moz-transition: background-color 0.3s linear, color 0.3s linear,
+    box-shadow 0.3s linear;
+  -ms-transition: background-color 0.3s linear, color 0.3s linear,
+    box-shadow 0.3s linear;
+  -o-transition: background-color 0.3s linear, color 0.3s linear,
+    box-shadow 0.3s linear;
+}
+
+button:focus,
+a:focus,
+input:focus {
+  outline: 2px solid var(--red-400);
+  outline-offset: 1px;
+}
+
+body {
+  font-family: "Noto Sans", sans-serif;
+  background: var(--Light-Gradient);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: var(--neutral-900);
+}
+
+p {
+  font-size: 16px;
+}
+
+li {
+  list-style: none;
+}
+
+main {
+  padding: 2em 4em;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+main nav {
+  background-color: var(--neutral-0);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 1em;
+  border-radius: 15px;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  -ms-border-radius: 15px;
+  -o-border-radius: 15px;
+}
+
+main nav .ChangeThemeBtn {
+  border: none;
+  background: var(--neutral-100);
+  cursor: pointer;
+  padding: 5px;
+  border-radius: 6px;
+}
+
+main .extensions {
+  margin-top: 2em;
+}
+
+main .extensions header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 1em;
+}
+
+main .extensions header ul {
+  display: flex;
+  justify-content: space-between;
+}
+
+main .extensions header ul li {
+  margin: 0 10px;
+}
+
+main .extensions header ul button {
+  border: none;
+  background: var(--neutral-0);
+  cursor: pointer;
+  padding: 15px;
+  font-weight: 400;
+  text-transform: capitalize;
+  border-radius: 25px;
+  -webkit-border-radius: 25px;
+  -moz-border-radius: 25px;
+  -ms-border-radius: 25px;
+  -o-border-radius: 25px;
+  color: var(--neutral-900);
+}
+
+main .extensions header ul button:hover,
+main .extensions header ul button.active {
+  background-color: var(--red-400);
+  color: var(--neutral-0);
+}
+
+main .extensions .content {
+  margin-top: 2em;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  align-items: stretch;
+  gap: 20px;
+}
+
+main .extensions .content .extension-item {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: var(--neutral-0);
+  padding: 20px;
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+}
+
+main .extensions .content .extension-item .info {
+  display: flex;
+  justify-content: space-between;
+  /* background-color: #333; */
+  margin-bottom: 3em;
+}
+
+main .extensions .content .extension-item .info .details {
+  margin-left: 1em;
+}
+
+main .extensions .content .extension-item .info .details h2 {
+  margin-bottom: 10px;
+  font-size: 1.5em;
+}
+
+main .extensions .content .extension-item .info .details p {
+  color: #4e5159;
+}
+
+main .extensions .content .extension-item .actions {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 10px;
+}
+
+main .extensions .content .extension-item .actions button {
+  border: 1px solid #ddd;
+  background-color: transparent;
+  cursor: pointer;
+  padding: 15px;
+  font-weight: 500;
+  text-transform: capitalize;
+  border-radius: 30px;
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  -ms-border-radius: 30px;
+  -o-border-radius: 30px;
+  color: var(--neutral-900);
+  line-height: 0;
+}
+
+.checkbox-wrapper-2 .ikxBAC {
+  appearance: none;
+  background-color: #dfe1e4;
+  border-radius: 72px;
+  border-style: none;
+  flex-shrink: 0;
+  height: 20px;
+  margin: 0;
+  position: relative;
+  width: 30px;
+  transition: 0.3s all linear;
+  -webkit-transition: 0.3s all linear;
+  -moz-transition: 0.3s all linear;
+  -ms-transition: 0.3s all linear;
+  -o-transition: 0.3s all linear;
+}
+
+.checkbox-wrapper-2 .ikxBAC::before {
+  bottom: -6px;
+  content: "";
+  left: -6px;
+  position: absolute;
+  right: -6px;
+  top: -6px;
+}
+
+.checkbox-wrapper-2 .ikxBAC,
+.checkbox-wrapper-2 .ikxBAC::after {
+  transition: all 0.3s linear;
+  -webkit-transition: all 0.3s linear;
+  -moz-transition: all 0.3s linear;
+  -ms-transition: all 0.3s linear;
+  -o-transition: all 0.3s linear;
+}
+
+.checkbox-wrapper-2 .ikxBAC::after {
+  background-color: #fff;
+  border-radius: 50%;
+  content: "";
+  height: 14px;
+  left: 3px;
+  position: absolute;
+  top: 3px;
+  width: 14px;
+}
+
+.checkbox-wrapper-2 input[type="checkbox"] {
+  cursor: default;
+}
+
+.checkbox-wrapper-2 .ikxBAC:hover {
+  background-color: #c9cbcd;
+  transition-duration: 0s;
+}
+
+.checkbox-wrapper-2 .ikxBAC:checked {
+  background-color: var(--red-500);
+}
+
+.checkbox-wrapper-2 .ikxBAC:checked::after {
+  background-color: #fff;
+  left: 13px;
+}
+
+.checkbox-wrapper-2 :focus:not(.focus-visible) {
+  outline: 0;
+}
+
+.checkbox-wrapper-2 .ikxBAC:checked:hover {
+  background-color: var(--red-700);
+}
+
+@media screen and (max-width: 768px) {
+  main {
+    padding: 1em 1.5em;
+  }
+  .extensions .content {
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  }
+}
+
+@media screen and (max-width: 650px) {
+  main .extensions header {
+    flex-direction: column;
+  }
+  main .extensions header h1 {
+    margin-bottom: 1.5em;
+  }
+
+  main .extensions .content .extension-item .info .details h2 {
+    font-size: 1em;
+  }
+}
